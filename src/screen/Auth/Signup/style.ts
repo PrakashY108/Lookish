@@ -19,6 +19,11 @@ const styles = StyleSheet.create({
         paddingHorizontal:20,
         paddingTop:30
 
+    },
+    errormessage:{
+        color:Colors.error,
+        fontSize:13,
+        marginLeft:3
     }
 });
 export default styles;

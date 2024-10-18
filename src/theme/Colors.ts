@@ -9,9 +9,10 @@ const Colors = {
     textcolor:"#978E80",
     placeholdercolour:"#00000040",
     backgroundcontainer: "#F0EFEDCC",
-
+ 
     btncolor:"#7C7467",
-    background: "#DCD9D4"
+    background: "#DCD9D4",
+    error:"#E44747"
   };
   export default Colors;
 

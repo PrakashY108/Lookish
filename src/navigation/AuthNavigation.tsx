@@ -6,6 +6,9 @@ import {Image, TouchableOpacity, View} from 'react-native';
 import Images from '../assets';
 import styles from '../screen/Splash/style';
 import Colors from '../theme/Colors';
+import ForgotPassword from '../screen/Auth/ForgotPassword';
+import OTP from '../screen/Auth/OTP';
+import ChangePassword from '../screen/Auth/ChangePassword';
 
 const Stack = createNativeStackNavigator();
 const AuthNavigation = () => {
@@ -17,6 +20,18 @@ const AuthNavigation = () => {
       <Stack.Screen
         name="Signup"
         component={SignUp}
+      />
+      <Stack.Screen
+        name="ForgotPassword"
+        component={ForgotPassword}
+      />
+      <Stack.Screen
+        name="OTP"
+        component={OTP}
+      />
+      <Stack.Screen
+        name="ChangePassword"
+        component={ChangePassword}
       />
     </Stack.Navigator>
   );

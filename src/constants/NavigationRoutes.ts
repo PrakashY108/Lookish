@@ -3,6 +3,9 @@
 const NavigationRoutes={
 splash:"Splash",
 login:"Login",
-signup:"Signup"
+signup:"Signup",
+forgotpassword:"ForgotPassword",
+otp:"OTP",
+changepassword:"ChangePassword"
 }
 export default NavigationRoutes;

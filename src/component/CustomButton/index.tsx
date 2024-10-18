@@ -8,7 +8,7 @@ interface CustomButtonType{
     title:string,
     color:string,
     bgcolor:string,
-    border:boolean,
+    border?:boolean|null,
     onpress:any
 }
 const CustomButton = ({title,color,bgcolor,border,onpress}:CustomButtonType) => {

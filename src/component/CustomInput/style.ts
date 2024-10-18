@@ -8,8 +8,7 @@ const styles = StyleSheet.create({
     borderColor:Colors.borderblack,
     borderWidth:1,
     borderRadius:10,
-    backgroundColor:Colors.white,
-    marginBottom:20,
+    backgroundColor:"white",
     paddingHorizontal:15
     
   },
@@ -18,7 +17,8 @@ const styles = StyleSheet.create({
     fontWeight:"700",
     fontSize:14,
     lineHeight:17,
-    marginLeft:7
+    marginLeft:10,
+    marginTop:20
   },
 });
 export default styles;

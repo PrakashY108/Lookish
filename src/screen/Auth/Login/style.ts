@@ -34,6 +34,11 @@ const styles = StyleSheet.create({
   },
   donthaveacc:{
     marginLeft:"30%"
-  }
+  },
+  errormessage:{
+    color:Colors.error,
+    fontSize:13,
+    marginLeft:3
+}
 });
 export default styles;

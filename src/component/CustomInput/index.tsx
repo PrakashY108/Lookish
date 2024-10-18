@@ -6,13 +6,17 @@ import Colors from '../../theme/Colors'
 
 interface CustomInputType{
   placeholder:string
-  title:string
+  title:string,
+  value:string,
+  onchangetext:any,
+  secure?:boolean
 }
-const CustomInput = ({placeholder,title}:CustomInputType) => {
+const CustomInput = ({placeholder,title,value,onchangetext,secure}:CustomInputType) => {
+  
   return (
     <View>
       <Text style={styles.text}>{title}</Text>
-      <TextInput placeholderTextColor={Colors.placeholdercolour} style={styles.input} placeholder={placeholder}/>
+      <TextInput value={value} secureTextEntry={secure} onChangeText={onchangetext} placeholderTextColor={Colors.placeholdercolour} style={styles.input} placeholder={placeholder}/>
     </View>
   )
 }

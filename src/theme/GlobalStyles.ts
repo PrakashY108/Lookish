@@ -1,10 +1,17 @@
 import {StyleSheet} from 'react-native';
 import Colors from './Colors';
-
+import Fonts from './Fonts';
 
 const Globalstyles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  heading: {
+    color: Colors.textcolor,
+    fontSize: 27,
+    marginHorizontal: 30,
+    marginTop: 20,
+    fontFamily:Fonts.CormorantGaramond_BoldItalic
   },
   margin_10: {margin: 10},
   margin_20: {margin: 20},
