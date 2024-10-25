@@ -41,7 +41,7 @@ const Login = () => {
     }
 
     if (valid) {
-      console.log('Alright');
+      navigation.replace(NavigationRoutes.home)
     } else {
       console.log('error', valid);
     }

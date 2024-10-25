@@ -4,16 +4,16 @@ import logo from './images/Logo/logo.png';
 import splash_logo from './images/SplashLogo/splash_logo.png'
 // import lock from './images/Lock/lock.png';
 // import eye_off from './images/Eye/eye_off.png';
-// import calendar from './images/Calendar/calendar.png';
+import calendar from './images/Calendar/calendar.png';
 import left_arrow from './images/Arrow/left_arrow.png';
 // import bell from './images/Bell/bell.png';
 // import drawer_menu from './images/DrawerMenu/drawer_menu.png';
 // import filter from './images/Filter/filter.png';
 // import menu from './images/Menu/menu.png';
 // import sun from './images/Sun/sun.png';
-// import add from './images/BottomTab/Add/add.png';
-// import favorites from './images/BottomTab/Favorites/favorites.png';
-// import home from './images/BottomTab/Home/home.png';
+import add from './images/BottomTab/Add/add.png';
+import favorites from './images/BottomTab/Favorites/favorites.png';
+import home from './images/BottomTab/Home/home.png';
 // import search from './images/BottomTab/Search/search.png';
 // import down_arrow from './images/Arrow/down_arrow.png';
 import loginBackground from './images/LoginBackground/loginBackground.png';
@@ -30,7 +30,7 @@ import loginBackground from './images/LoginBackground/loginBackground.png';
 // import user_x from './images/DrawerIcon/user_x/user_x.png';
 // import users from './images/DrawerIcon/users/users.png';
 // import x_circle from './images/DrawerIcon/x_circle/x_circle.png';
-// import user from './images/BottomTab/User/user.png';
+import user from './images/BottomTab/User/user.png';
 // import camera from './images/Camera/camera.png';
 // import camera1 from './images/Camera/camera1.png';
 // import edit from './images/Edit/edit.png';
@@ -106,16 +106,16 @@ const Images = {
   // logo2,
   // lock,
   // eye_off,
-  // calendar,
+  calendar,
   left_arrow,
   // bell,
   // drawer_menu,
   // filter,
   // menu,
   // sun,
-  // add,
-  // favorites,
-  // home,
+  add,
+  favorites,
+  home,
   // search,
   // down_arrow,
   loginBackground,
@@ -132,7 +132,7 @@ const Images = {
   // user_x,
   // users,
   // x_circle,
-  // user,
+  user,
   // camera,
   // camera1,
   // edit,
