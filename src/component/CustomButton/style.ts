@@ -8,7 +8,8 @@ const styles = StyleSheet.create({
         alignItems:"center",
         justifyContent:"center",
         borderRadius:20,
-        marginVertical:20
+        marginVertical:20,
+        paddingHorizontal:10
         
     },
     title:{

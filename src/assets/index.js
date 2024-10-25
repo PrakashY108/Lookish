@@ -6,11 +6,11 @@ import splash_logo from './images/SplashLogo/splash_logo.png'
 // import eye_off from './images/Eye/eye_off.png';
 import calendar from './images/Calendar/calendar.png';
 import left_arrow from './images/Arrow/left_arrow.png';
-// import bell from './images/Bell/bell.png';
+import bell from './images/Bell/bell.png';
 // import drawer_menu from './images/DrawerMenu/drawer_menu.png';
 // import filter from './images/Filter/filter.png';
 // import menu from './images/Menu/menu.png';
-// import sun from './images/Sun/sun.png';
+import sun from './images/Sun/sun.png';
 import add from './images/BottomTab/Add/add.png';
 import favorites from './images/BottomTab/Favorites/favorites.png';
 import home from './images/BottomTab/Home/home.png';
@@ -108,11 +108,11 @@ const Images = {
   // eye_off,
   calendar,
   left_arrow,
-  // bell,
+  bell,
   // drawer_menu,
   // filter,
   // menu,
-  // sun,
+  sun,
   add,
   favorites,
   home,
