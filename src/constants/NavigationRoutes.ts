@@ -7,6 +7,7 @@ signup:"Signup",
 forgotpassword:"ForgotPassword",
 otp:"OTP",
 changepassword:"ChangePassword",
-home:"Home"
+home:"Home",
+myish:"MyIsh"
 }
 export default NavigationRoutes;

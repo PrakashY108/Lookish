@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   },
   logo:{
   marginTop:"20%",
-  marginBottom:"30%"
+  marginBottom:"15%"
   },
   logincontainer: {
     height: 500,

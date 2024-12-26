@@ -9,9 +9,11 @@ interface CustomButtonType{
     color:string,
     bgcolor:string,
     border?:boolean|null,
-    onpress:any
+    onpress:any,
+    height?:number,
+    width?:number
 }
-const CustomButton = ({title,color,bgcolor,border,onpress}:CustomButtonType) => {
+const CustomButton = ({title,color,bgcolor,border,onpress,height,width}:CustomButtonType) => {
   return (
     <View>
       <TouchableOpacity onPress={onpress} style={[styles.container,{backgroundColor:bgcolor},border?{borderColor:Colors.borderblack,borderWidth:1}:{}]}>

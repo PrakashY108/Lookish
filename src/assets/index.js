@@ -7,9 +7,9 @@ import splash_logo from './images/SplashLogo/splash_logo.png'
 import calendar from './images/Calendar/calendar.png';
 import left_arrow from './images/Arrow/left_arrow.png';
 import bell from './images/Bell/bell.png';
-// import drawer_menu from './images/DrawerMenu/drawer_menu.png';
-// import filter from './images/Filter/filter.png';
-// import menu from './images/Menu/menu.png';
+import drawer_menu from './images/DrawerMenu/drawer_menu.png';
+import filter from './images/Filter/filter.png';
+import menu from './images/Menu/menu.png';
 import sun from './images/Sun/sun.png';
 import add from './images/BottomTab/Add/add.png';
 import favorites from './images/BottomTab/Favorites/favorites.png';
@@ -48,7 +48,7 @@ import user from './images/BottomTab/User/user.png';
 // import Plus_Box from './images/Plus/plus_box.png';
 // import Send from './images/Send/send.png';
 // import Eye from './images/Eye/eye.png';
-// import Search_icon from './images/Search/search_icon.png';
+import Search_icon from './images/Search/search_icon.png';
 // import Plus1 from './images/Plus/plus1.png';
 // import ActiveCircle from './images/CircleRadioButton/active_circle.png';
 // import InactiveCircle from './images/CircleRadioButton/inactive_circle.png';
@@ -56,7 +56,7 @@ import user from './images/BottomTab/User/user.png';
 // import FillHeart from './images/Hart/fill_heart.png';
 // import Chat from './images/Chat/chat.png';
 // import Add_Image from './images/Add/add_image.png';
-// import Logo1 from './images/Logo/logo1.png';
+import Logo1 from './images/Logo/logo1.png';
 // import Stylist from './images/LookishStyle/stylist/stylist.png';
 // import FittingRoom from './images/LookishStyle/fittingRoom/fittingRoom.png';
 // import FittingRoomInfo from './images/FittingRoomInfo/fittingRoomInfo.png';
@@ -99,7 +99,7 @@ import dummy29 from './images/DummyImages/dummy29.png';
 import headshot from './images/FittingRoomInfo/Headshot.png';
 import waist_up from './images/FittingRoomInfo/waist.png';
 import full_body from './images/FittingRoomInfo/fullbody.png';
-
+import  demoprofile from './images/demoprofile.png'
 const Images = {
   splash_logo,
   logo,
@@ -109,9 +109,9 @@ const Images = {
   calendar,
   left_arrow,
   bell,
-  // drawer_menu,
-  // filter,
-  // menu,
+  drawer_menu,
+  filter,
+  menu,
   sun,
   add,
   favorites,
@@ -149,7 +149,7 @@ const Images = {
   // Plus,
   // Send,
   // Eye,
-  // Search_icon,
+  Search_icon,
   // Plus1,
   // Plus_Box,
   // ActiveCircle,
@@ -158,7 +158,7 @@ const Images = {
   // Hart,
   // Chat,
   // Add_Image,
-  // Logo1,
+  Logo1,
   // Stylist,
   // FittingRoom,
   // FittingRoomInfo,
@@ -201,6 +201,7 @@ const Images = {
     dummy27,
     dummy28,
     dummy29,
+    demoprofile,
   },
 };
 

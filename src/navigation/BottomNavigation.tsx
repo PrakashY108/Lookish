@@ -15,33 +15,92 @@ const BottomNavigation = () => {
     <Tab.Navigator
       initialRouteName="Homee"
       screenOptions={{
-        tabBarStyle: { height: 70, backgroundColor: '#DCD9D4',alignItems:"center",justifyContent:"center" },
-        tabBarActiveBackgroundColor: '#7D7467',
-        tabBarActiveTintColor:"white",
-        headerShown:false,
-        tabBarItemStyle:{
-          paddingBottom:7,
+        tabBarActiveTintColor: 'white',
+        tabBarStyle: {
+          backgroundColor: '#DCD9D4',
+          height: 65,
+          margin: 10,
+          borderRadius: 30,
         },
-        // tabBarInactiveTintColor:"#7D7467"
-        
-        
+      
+        tabBarActiveBackgroundColor: '#7D7467',
+        tabBarItemStyle: {padding: 8},
       }}>
-      <Tab.Screen name="Homee" component={Home} options={{tabBarIcon:()=>(<Image style={styles.icon} source={Images.home} />)}} />
-      <Tab.Screen name="Favorite" component={Favorites} options={{tabBarIcon:()=>(<Image style={styles.icon} source={Images.favorites} />)}}/>
-      <Tab.Screen name="Add" component={Add} options={{tabBarIcon:()=>(<Image style={styles.icon} source={Images.add} />)}}/>
-      <Tab.Screen name="Calendar" component={Calendar} options={{tabBarIcon:()=>(<Image style={styles.icon} source={Images.calendar} />)}} />
-      <Tab.Screen name="Profile" component={Profile} options={{tabBarIcon:()=>(<Image style={styles.icon} source={Images.user} />)}}/>
+      <Tab.Screen
+        name="Homee"
+        component={Home}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({focused}) => (
+            <Image
+              style={[styles.icon, {tintColor: focused ? 'white' : '#7D7467'}]}
+              source={Images.home}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Favorite"
+        component={Favorites}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({focused}) => (
+            <Image
+              style={[styles.icon, {tintColor: focused ? 'white' : '#7D7467'}]}
+              source={Images.favorites}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Add"
+        component={Add}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({focused}) => (
+            <Image
+              style={[styles.icon, {tintColor: focused ? 'white' : '#7D7467'}]}
+              source={Images.add}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Calendar"
+        component={Calendar}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({focused}) => (
+            <Image
+              style={[styles.icon, {tintColor: focused ? 'white' : '#7D7467'}]}
+              source={Images.calendar}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={Profile}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({focused}) => (
+            <Image
+              style={[styles.icon, {tintColor: focused ? 'white' : '#7D7467'}]}
+              source={Images.user}
+            />
+          ),
+        }}
+      />
     </Tab.Navigator>
   );
 };
 
 export default BottomNavigation;
+
 const styles = StyleSheet.create({
   icon: {
-    height: 35,
-    width: 35,
+    height: 28,
+    width: 28,
     resizeMode: 'contain',
-   
-    borderWidth:2
   },
 });

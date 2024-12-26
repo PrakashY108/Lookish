@@ -3,44 +3,21 @@ import React from 'react';
 import CustomHeader from '../../../component/CustomHeader';
 import MainCloset from './components/Maincloset';
 import Images from '../../../assets';
+import styles from './style';
 
 const Home = () => {
+ 
   return (
-    <View>
-      <CustomHeader title="Lookish" />
+    <View style={{marginHorizontal: 7}}>
+      <CustomHeader menubtn title="Lookish" />
       <MainCloset />
-      <View
-        style={{
-          width: '80%',
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexDirection: 'row',
-          gap: 10,
-          borderWidth: 0.5,
-          borderColor: 'black',
-          borderRadius: 10,
-          marginHorizontal:40,
-          padding:10,
-          opacity:0.1,
-          position:"relative",
-          bottom:-120
-        }}>
+      <View style={styles.bottomclosetcontainer}>
         <Image
-          style={{
-            height: 80,
-            width: 120,
-            resizeMode: 'cover',
-            borderRadius: 11,
-          }}
+          style={styles.img}
           source={require('../../../assets/images/DummyImages/dummy7.png')}
         />
         <Image
-          style={{
-            height: 80,
-            width: 120,
-            resizeMode: 'cover',
-            borderRadius: 11,
-          }}
+          style={styles.img}
           source={require('../../../assets/images/DummyImages/dummy8.png')}
         />
       </View>

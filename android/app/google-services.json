@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "330120865171",
+    "project_id": "notificationtestapp-d8525",
+    "storage_bucket": "notificationtestapp-d8525.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330120865171:android:e16ed8fdd1378767dfb466",
+        "android_client_info": {
+          "package_name": "com.lookish"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA508i7FI-mVmx7vIB3gDz5L-rG1kXe_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

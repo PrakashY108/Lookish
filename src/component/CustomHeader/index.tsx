@@ -4,34 +4,75 @@ import {useNavigation} from '@react-navigation/native';
 import Images from '../../assets';
 import styles from './style';
 
+import Fonts from '../../theme/Fonts';
+import Colors from '../../theme/Colors';
+
 interface CustomHeaderType {
   title: string;
   menubtn?: boolean;
+  righticon?: any;
+  nobackbtn?: boolean;
 }
-const CustomHeader = ({title, menubtn}: CustomHeaderType) => {
+const CustomHeader = ({
+  title,
+  menubtn,
+  righticon,
+  nobackbtn,
+}: CustomHeaderType) => {
   const navigation = useNavigation();
   return (
     <>
-    <TouchableOpacity
-      style={styles.headertext}
-      onPress={() => navigation.goBack()}>
       {!menubtn ? (
-        <Image
-          style={{
-            height: 15,
-            width: 15,
-            resizeMode: 'contain',
-            marginHorizontal: 10,
-            marginLeft: 20,
-          }}
-          source={Images.left_arrow}
-        />
-      ) : null}
-      <Text style={styles.title}>{title}</Text>
-    </TouchableOpacity>
-    <TouchableOpacity>
-      
-    </TouchableOpacity>
+        <View style={styles.container}>
+          {nobackbtn ? null : (
+            <TouchableOpacity
+              style={{flexDirection: 'row'}}
+              onPress={() => navigation.goBack()}>
+              <Image style={styles.icon} source={Images.left_arrow} />
+            </TouchableOpacity>
+          )}
+          <Text
+            style={[
+              styles.title,
+              nobackbtn ? {color: Colors.borderblack,fontSize:30,fontWeight:"700"} : null,
+              
+            ]}>
+            {title}
+          </Text>
+          <TouchableOpacity style={styles.righticon}>
+            <Image
+              style={{height: 25, width: 25, tintColor: Colors.btncolor}}
+              source={Images.bell}
+            />
+          </TouchableOpacity>
+        </View>
+      ) : (
+        <View
+          style={[
+            styles.container,
+            {justifyContent: 'space-between', marginTop: 20},
+          ]}>
+          <View style={styles.tempcontainer}>
+            <Image style={styles.icon} source={Images.drawer_menu} />
+            <Image style={styles.logoimg} source={Images.Logo1} />
+          </View>
+          <View style={styles.tempcontainer}>
+            <Image
+              style={[styles.icon, {tintColor: 'orange'}]}
+              source={Images.sun}
+            />
+            <Text
+              style={{
+                color: 'Black',
+                fontSize: 15,
+                fontWeight: '900',
+                fontFamily: Fonts.CormorantGaramond_Italic,
+              }}>
+              82°/60°
+            </Text>
+          </View>
+        </View>
+      )}
     </>
   );
 };
