@@ -90,6 +90,9 @@ const Profile = () => {
         <DetailCard title={'Phone No'} value={'9327864247'} />
         <DetailCard title={'DOB'} value={'2023-02-12'} />
       </View>
+      <View>
+       
+      </View>
     </ScrollView>
   );
 };

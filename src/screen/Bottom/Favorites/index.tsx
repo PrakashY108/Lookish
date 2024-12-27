@@ -51,7 +51,6 @@ const Favorites = () => {
 
   const renderItem = ({item}: any) => {
     return (
-      
       <View style={styles.card}>
         <Image style={styles.img} source={item.image} />
         <View style={styles.details}>
@@ -73,9 +72,13 @@ const Favorites = () => {
     );
   };
   return (
-    <View style={{flex:1}}>
-      <CustomHeader title="Favorites" nobackbtn />
-      <FlatList showsVerticalScrollIndicator={false} data={data} renderItem={renderItem} />
+    <View style={{flex: 1}}>
+      <FlatList
+        showsVerticalScrollIndicator={false}
+        data={data}
+        renderItem={renderItem}
+        ListHeaderComponent={<CustomHeader title="Favorites" nobackbtn />}
+      />
     </View>
   );
 };

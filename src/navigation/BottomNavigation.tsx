@@ -3,10 +3,12 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from '../screen/Bottom/Home';
 import Favorites from '../screen/Bottom/Favorites';
-import Add from '../screen/Bottom/Add';
+
 import Calendar from '../screen/Bottom/Calendar';
 import Profile from '../screen/Bottom/Profile';
 import Images from '../assets';
+import Cart from '../screen/Bottom/Cart';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -53,19 +55,19 @@ const BottomNavigation = () => {
         }}
       />
       <Tab.Screen
-        name="Add"
-        component={Add}
+        name="Cart"
+        component={Cart}
         options={{
           headerShown: false,
           tabBarIcon: ({focused}) => (
             <Image
               style={[styles.icon, {tintColor: focused ? 'white' : '#7D7467'}]}
-              source={Images.add}
+              source={Images.cart}
             />
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Calendar"
         component={Calendar}
         options={{
@@ -77,7 +79,7 @@ const BottomNavigation = () => {
             />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name="Profile"
         component={Profile}

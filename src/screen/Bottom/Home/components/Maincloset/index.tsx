@@ -11,8 +11,9 @@ import CustomButton from '../../../../../component/CustomButton';
 import Colors from '../../../../../theme/Colors';
 import {Dropdown} from 'react-native-element-dropdown';
 import Header from '../Header';
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import NavigationRoutes from '../../../../../constants/NavigationRoutes';
+import styles from './style';
 const Dropdata = [
   {label: 'Title 1', value: 'title1'},
   {label: 'Title 2', value: 'title2'},
@@ -45,28 +46,37 @@ const CategoryData = [
     title: 'Accessories',
     image: require('../../../../../assets/images/DummyImages/dummy25.png'),
   },
+  {
+    id: 5,
+    title: 'Caps',
+    image: require('../../../../../assets/images/DummyImages/dummy12.png'),
+  },
 ];
 const renderItem = ({item}) => (
   <TouchableOpacity
     style={{
       alignItems: 'center',
-      marginHorizontal: 10,
+      marginHorizontal: '4%',
       justifyContent: 'center',
       alignSelf: 'center',
+      borderRadius: 10,
+      marginVertical: 5,
     }}>
     <Image
-      style={{height: 130, width: 95, resizeMode: 'contain'}}
+      style={{height: 90, width: 90, resizeMode: 'contain'}}
       source={item.image}
     />
-    <Text style={{fontSize: 15, color: 'black'}}>{item.title}</Text>
+    <Text style={{fontSize: 15, color: 'black', marginTop: 7}}>
+      {item.title}
+    </Text>
   </TouchableOpacity>
 );
 const MainCloset = () => {
-  const navigation= useNavigation()
+  const navigation = useNavigation();
   return (
     <>
-    <Header/>
-      <View
+      <Header />
+      {/* <View
         style={{
           flexDirection: 'row',
           alignItems: 'center',
@@ -91,13 +101,25 @@ const MainCloset = () => {
           width={150}
           onpress={()=>navigation.navigate(NavigationRoutes.myish)}
         />
+      </View> */}
+      <View
+        style={{
+          backgroundColor: '#efefed',
+          borderRadius: 10,
+          paddingVertical: 10,
+          elevation: 5,
+          justifyContent: 'space-around',
+          borderColor: Colors.grey,
+          borderWidth: 0.5,
+        }}>
+        <Text style={styles.text}>Categories</Text>
+        <FlatList
+          data={CategoryData}
+          renderItem={renderItem}
+          keyExtractor={item => item.id.toString()}
+          numColumns={3}
+        />
       </View>
-      <FlatList
-        data={CategoryData}
-        renderItem={renderItem}
-        keyExtractor={item => item.id.toString()}
-        numColumns={3}
-      />
     </>
   );
 };

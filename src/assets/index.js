@@ -99,10 +99,12 @@ import dummy29 from './images/DummyImages/dummy29.png';
 import headshot from './images/FittingRoomInfo/Headshot.png';
 import waist_up from './images/FittingRoomInfo/waist.png';
 import full_body from './images/FittingRoomInfo/fullbody.png';
+import cart from './images/cart.png'
 import  demoprofile from './images/demoprofile.png'
 const Images = {
   splash_logo,
   logo,
+  cart,
   // logo2,
   // lock,
   // eye_off,
